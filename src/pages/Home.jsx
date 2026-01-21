@@ -119,7 +119,7 @@ export default function Home() {
             <RHS>
               <Content
                 type="text"
-                value="I buil this game using PS5 Devkit to explore the haptic functionalities of the PS5 Controller. I have used touch pad, microphone, trigger resistance,
+                value="I built this game using PS5 Devkit to explore the haptic functionalities of the PS5 Controller. I have used touch pad, microphone, trigger resistance,
                 vibrations and lightbar in the game to enhance the virtual kite flying experience."
               />
               <Content
@@ -155,7 +155,7 @@ export default function Home() {
             <RHS>
               <Content
                 type="text"
-                value="DS5Bridge is a Windows C++ wrapper that exposes advanced PlayStation 5 DualSense features to Unity without requiring a PS5 devkit."
+                value="DS5Bridge is a Windows C++ wrapper that exposes advanced PlayStation 5 DualSense features to Unity without requiring a PS5 Devkit."
               />
               <Content
                 type="text"
@@ -167,7 +167,7 @@ export default function Home() {
               />
               <Content
                 type="text"
-                value="The github link below has the ready to use DLL with a detailed explanation guide for all fellow developers who wish to explore the PS5 Controller functionalities but do not have access to PS5 Devkit."
+                value="The GitHub link below has the ready to use DLL with a detailed explanation guide for all fellow developers who wish to explore the PS5 Controller functionalities but do not have access to PS5 Devkit."
               />
               <Content
                 type="button"
@@ -206,7 +206,7 @@ export default function Home() {
               />
               <Content
                 type="text"
-                value="The github repository has the project file, build and detailed explanation of my role in the MD file."
+                value="The GitHub repository has the project file, build and detailed explanation of my role in the MD file."
               />
               <Content
                 type="button"
