@@ -250,7 +250,7 @@ export default function Home() {
               <Content
                 type="button"
                 value="Open Repository"
-                url="https://docs.google.com/document/d/1_qhZnu0KQnrzz0PCcqbeHTuKBIwPlCEVm2guc_GxAPk/edit?usp=sharing"
+                url="https://github.com/MrQuazar/RhythmWalker"
               />
             </RHS>
           }
