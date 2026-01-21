@@ -1,0 +1,177 @@
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .section-divider {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 1317px;
+    max-height: 38px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    margin: 3rem 0;
+  }
+
+  .title-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 420px;
+    max-height: 420px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .contact {
+    min-height: unset;
+  }
+
+  .social-media-handles {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+
+    .LinkedIn,
+    .Instagram,
+    .GitHub {
+      min-width: 48px;
+      min-height: 48px;
+      color: transparent;
+      font-size: 0;
+      text-shadow: none;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    .YouTube {
+      min-width: 48px;
+      min-height: 34px;
+      color: transparent;
+      font-size: 0;
+      text-shadow: none;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    .LinkedIn {
+      background-image: url("../assets/images/linkedin.png");
+    }
+
+    .Instagram {
+      background-image: url("../assets/images/instagram.png");
+    }
+
+    .YouTube {
+      background-image: url("../assets/images/youtube.png");
+    }
+
+    .GitHub {
+      background-image: url("../assets/images/github.png");
+    }
+  }
+
+  .personal-info-container {
+    width: 614px;
+    display: flex;
+    padding-left: 24px;
+    flex-direction: column;
+
+    .personal-info {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 8px;
+
+      p {
+        width: unset;
+        min-width: 350px;
+      }
+
+      img {
+        max-width: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-container {
+    .section-divider {
+      max-width: 90%;
+      margin: 2rem 0;
+    }
+
+    .title-img {
+      max-width: 260px;
+      max-height: 260px;
+    }
+
+    .social-media-handles {
+      gap: 2rem;
+
+      .LinkedIn,
+      .Instagram,
+      .GitHub {
+        min-width: 44px;
+        min-height: 44px;
+      }
+
+      .YouTube {
+        min-width: 48px;
+        min-height: 34px;
+      }
+    }
+
+    .personal-info-container {
+      width: 100%;
+      padding: 0 1rem;
+      margin-bottom: 8px;
+
+      .personal-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        p {
+          min-width: unset;
+          width: 100%;
+          font-size: 0.95rem;
+        }
+
+        img {
+          max-width: 20px;
+        }
+      }
+    }
+  }
+}
+
+.portfolio-credit {
+  align-self: flex-end;
+  font-style: italic;
+  opacity: 1;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
+
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.3px;
+  text-align: right;
+
+  user-select: none;
+}
+
+@media (max-width: 600px) {
+  .portfolio-credit {
+    font-size: 0.75rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+}
