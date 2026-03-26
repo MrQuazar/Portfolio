@@ -3,9 +3,10 @@ import Navbar from "../components/Navbar/Navbar";
 import Section from "../components/Section/Section";
 import LHS from "../components/LHS/LHS";
 import RHS from "../components/RHS/RHS";
+import CS from "../components/CS/CS";
 import Content from "../components/Content/Content";
 
-import aboutImage from "../assets/images/intro.png";
+import aboutImage from "../assets/images/new_dp.png";
 import chess2Title from "../assets/images/Chess2Logo.png";
 import chess2Img1 from "../assets/images/chess 1.png";
 import chess2Img2 from "../assets/images/chess 2.png";
@@ -30,6 +31,11 @@ import divider from "../assets/images/divider.png";
 import contactBg from "../assets/images/contactBg.png";
 import email from "../assets/images/email.png";
 import location from "../assets/images/location_on.png";
+
+import cv from "../assets/files/AartemSingh_GameDeveloper_CV.pdf";
+import sunMoonBg from "../assets/images/sunmoonBg.png";
+import whereIsBellBg from "../assets/images/whereisbellbg.png";
+import chaseBallBg from "../assets/images/chaseballbg.png";
 
 export default function Home() {
   return (
@@ -65,6 +71,145 @@ export default function Home() {
 
         <img className="section-divider" src={divider} alt="" />
 
+        {/* Resume download */}
+        <Section
+          id="resume"
+          cs={
+            <CS headerText="Cirriculum Vitae">
+              <iframe src={cv} className="resume-viewer" />
+            </CS>
+          }
+        />
+        <img className="section-divider" src={divider} alt="" />
+        {/* Bloom or Doom*/}
+        <Section
+          id="sunmoon"
+          bgImage={sunMoonBg}
+          topContent={<h1>Bloom or Doom</h1>}
+          lhs={
+            <LHS>
+              <iframe
+                className="project-video"
+                src="https://www.youtube.com/embed/WInRiD5h7xs?si=7v98qmN80NM6aA9Q"
+                title="Bloom or Doom Gameplay"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </LHS>
+          }
+          rhs={
+            <RHS>
+              <Content
+                type="text"
+                value="Bloom or Doom is an engaging puzzle platformer that blends dynamic day/night mechanics with strategic object manipulation."
+              />
+              <Content
+                type="button"
+                value="View Repo"
+                url="https://github.com/MrQuazar/SunMoon"
+              />
+            </RHS>
+          }
+        />
+        <img className="section-divider" src={divider} alt="" />
+        {/* WHERE IS BELL */}
+        <Section
+          id="whereisbell"
+          bgImage={whereIsBellBg}
+          topContent={<h1>Where is Bell</h1>}
+          lhs={
+            <LHS>
+              <Content
+                type="text"
+                value="WhereIsBell is a 2D puzzle-adventure game where players explore environments to locate hidden objects, emphasizing observational skills and memory."
+              />
+              <Content
+                type="button"
+                value="View Repo"
+                url="https://github.com/MrQuazar/WhereIsBell"
+              />
+            </LHS>
+          }
+          rhs={
+            <RHS>
+              <iframe
+                className="project-video"
+                src="https://www.youtube.com/embed/NgYA5mPGBQo?si=Iao3BRA02LQjCWB1"
+                title="WhereIsBell Gameplay"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </RHS>
+          }
+        />
+        <img className="section-divider" src={divider} alt="" />
+        {/* CHASEBALL */}
+        <Section
+          id="chaseball"
+          bgImage={chaseBallBg}
+          topContent={<h1>Chase Ball</h1>}
+          lhs={
+            <LHS>
+              <iframe
+                className="project-video"
+                src="https://www.youtube.com/embed/4i-WBLVaPYE?si=aj7PAMzpqwC9p4yu"
+                title="ChaseBall Gameplay"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </LHS>
+          }
+          rhs={
+            <RHS>
+              <Content
+                type="text"
+                value="ChaseBall is a 3D FPS prototype where projectiles intelligently chase targets when aimed correctly. The game explores risk/reward mechanics and immersive magical combat."
+              />
+              <Content
+                type="button"
+                value="View Repo"
+                url="https://github.com/MrQuazar/ChaseBall"
+              />
+            </RHS>
+          }
+        />
+        <img className="section-divider" src={divider} alt="" />
+
+        {/* FADING WATERS */}
+        <Section
+          id="fadingwaters"
+          bgImage={fadingWaters}
+          topContent={<h1>Fading Waters</h1>}
+          lhs={
+            <LHS>
+              <Content
+                type="text"
+                value="Fading Waters is a 3D survival game developed in Unreal Engine using Blueprints. Players control a Yelloweye Rockfish struggling to survive as the ocean ecosystem collapses due to pollution, toxic hazards, and shrinking safe zones. Inspired by UN SDG 14: Life Below Water, the game blends survival mechanics with environmental storytelling."
+              />
+              <Content
+                type="button"
+                value="View Repo"
+                url="https://github.com/MrQuazar/DSP5"
+              />
+            </LHS>
+          }
+          rhs={
+            <RHS>
+              <iframe
+                className="project-video"
+                src="https://www.youtube.com/embed/HaMDSiMoDtU"
+                title="Fading Waters Gameplay Trailer"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </RHS>
+          }
+        />
+        <img className="section-divider" src={divider} alt="" />
         {/* CHESS 2.0 */}
         <Section
           id="projects"
@@ -173,45 +318,6 @@ export default function Home() {
                 type="button"
                 value="Open Repository"
                 url="https://github.com/MrQuazar/DS5Bridge"
-              />
-            </RHS>
-          }
-        />
-
-        <img className="section-divider" src={divider} alt="" />
-
-        {/* FADING WATERS */}
-        <Section
-          id="projects"
-          bgImage={fadingWaters}
-          topContent={<h1>Fading Waters</h1>}
-          lhs={
-            <LHS>
-              <Content type="image" value={fadingWatersTitle} />
-            </LHS>
-          }
-          rhs={
-            <RHS>
-              <Content
-                type="text"
-                value="Fading Waters is a 3D survival game developed in Unreal Engine using Blueprint-only workflows, aligned with UN SDG 14: Life Below Water."
-              />
-              <Content
-                type="text"
-                value="I worked as the sole game developer and producer, implementing core systems such as dynamic zone collapse, survival mechanics, environmental hazards, AI-driven ocean life, and event-based gameplay."
-              />
-              <Content
-                type="text"
-                value="The project emphasises modular, scalable Blueprint architecture supported by GitLab version control and Jira-based sprint planning."
-              />
-              <Content
-                type="text"
-                value="The GitHub repository has the project file, build and detailed explanation of my role in the MD file."
-              />
-              <Content
-                type="button"
-                value="Open Repository"
-                url="https://github.com/MrQuazar/DSP5"
               />
             </RHS>
           }

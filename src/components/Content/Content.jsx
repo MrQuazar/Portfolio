@@ -22,5 +22,9 @@ export default function Content({ type, value, url }) {
     return <p className="content-title">{value}</p>;
   }
 
+  if (type === "text") {
+    return <div className="text-backdrop">{<p>{value}</p>}</div>;
+  }
+
   return <p>{value}</p>;
 }
