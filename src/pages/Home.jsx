@@ -83,7 +83,7 @@ export default function Home() {
         <img className="section-divider" src={divider} alt="" />
         {/* Bloom or Doom*/}
         <Section
-          id="sunmoon"
+          id="projects"
           bgImage={sunMoonBg}
           topContent={<h1>Bloom or Doom</h1>}
           lhs={
@@ -212,7 +212,6 @@ export default function Home() {
         <img className="section-divider" src={divider} alt="" />
         {/* CHESS 2.0 */}
         <Section
-          id="projects"
           bgImage={chess2Bg}
           topContent={<img className="title-img" src={chess2Title} alt="" />}
           lhs={
