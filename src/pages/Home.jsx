@@ -98,11 +98,7 @@ export default function Home() {
           }
           rhs={
             <RHS>
-              <img
-                src={blogPreviewImg}
-                alt="Game Dev Blog Preview"
-                className="project-image"
-              />
+              <Content type="image" value={blogPreviewImg} />
             </RHS>
           }
         />
