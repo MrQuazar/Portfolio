@@ -86,13 +86,13 @@ export default function Home() {
               <Content
                 type="button"
                 value="View All Blogs"
-                url="https://cdg-g7-aartem-gamedev.blogspot.com/"
+                url="https://aartem-gamedev.blogspot.com/"
               />
 
               <Content
                 type="button"
                 value="Read Latest Blog"
-                url="https://cdg-g7-aartem-gamedev.blogspot.com/2026/03/week-12-finalisation-debugging-testing.html"
+                url="https://aartem-gamedev.blogspot.com/2026/03/week-12-finalisation-debugging-testing.html"
               />
             </LHS>
           }
