@@ -37,6 +37,8 @@ import sunMoonBg from "../assets/images/sunmoonBg.png";
 import whereIsBellBg from "../assets/images/whereisbellbg.png";
 import chaseBallBg from "../assets/images/chaseballbg.png";
 
+import blogPreviewImg from "../assets/images/blogger.png";
+
 export default function Home() {
   return (
     <>
@@ -69,6 +71,41 @@ export default function Home() {
           }
         />
 
+        <img className="section-divider" src={divider} alt="" />
+        {/* BLOGS */}
+        <Section
+          id="blogs"
+          topContent={<h1>Game Dev Blog</h1>}
+          lhs={
+            <LHS>
+              <Content
+                type="text"
+                value="I document my journey through game development each week, covering design decisions, debugging challenges, testing phases, and final polish. These blogs show the full process behind my projects."
+              />
+
+              <Content
+                type="button"
+                value="View All Blogs"
+                url="https://cdg-g7-aartem-gamedev.blogspot.com/"
+              />
+
+              <Content
+                type="button"
+                value="Read Latest Blog"
+                url="https://cdg-g7-aartem-gamedev.blogspot.com/2026/03/week-12-finalisation-debugging-testing.html"
+              />
+            </LHS>
+          }
+          rhs={
+            <RHS>
+              <img
+                src={blogPreviewImg}
+                alt="Game Dev Blog Preview"
+                className="project-image"
+              />
+            </RHS>
+          }
+        />
         <img className="section-divider" src={divider} alt="" />
 
         {/* Resume download */}
