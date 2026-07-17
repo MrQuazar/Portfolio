@@ -117,7 +117,7 @@ export default function Home() {
         <img className="section-divider" src={divider} alt="" />
         {/* Challengers' Playground */}
         <Section
-          id="challengers-playground"
+          id="projects"
           bgImage={challengersBg}
           topContent={<h1>Challengers' Playground</h1>}
           lhs={
@@ -165,7 +165,6 @@ export default function Home() {
         <img className="section-divider" src={divider} alt="" />
         {/* Bloom or Doom*/}
         <Section
-          id="projects"
           bgImage={sunMoonBg}
           topContent={<h1>Bloom or Doom</h1>}
           lhs={
