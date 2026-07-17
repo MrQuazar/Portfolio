@@ -36,6 +36,7 @@ import cv from "../assets/files/AartemSingh_GameDeveloper_CV.pdf";
 import sunMoonBg from "../assets/images/sunmoonBg.png";
 import whereIsBellBg from "../assets/images/whereisbellbg.png";
 import chaseBallBg from "../assets/images/chaseballbg.png";
+import challengersBg from "../assets/images/challengersbg.png";
 
 import blogPreviewImg from "../assets/images/blogger.png";
 
@@ -114,6 +115,54 @@ export default function Home() {
           }
         />
         <img className="section-divider" src={divider} alt="" />
+        {/* Challengers' Playground */}
+        <Section
+          id="challengers-playground"
+          bgImage={challengersBg}
+          topContent={<h1>Challengers' Playground</h1>}
+          lhs={
+            <LHS>
+              <iframe
+                className="project-video"
+                src="https://www.youtube.com/embed/ycpdfWrsgQM"
+                title="Challengers' Playground Gameplay"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </LHS>
+          }
+          rhs={
+            <RHS>
+              <Content
+                type="text"
+                value="Challengers' Playground is a multiplayer movement-focused game developed in Unreal Engine 5 as my university capstone project. After submission, our team continued development to prepare the game for exhibition at Develop:Brighton 2026."
+              />
+
+              <Content
+                type="text"
+                value="I implemented a complete inventory system, powerups and parkour mechanics. I have also worked on audio, UI and environmental mobility."
+              />
+
+              <Content
+                type="text"
+                value="I have integrated character model, created Animation Blueprint, retargeted animations, and refined the movement systems to make gameplay feel more responsive and polished."
+              />
+
+              <Content
+                type="text"
+                value="To showcase the movement mechanics outside multiplayer, our team developed a single-player Challenge Mode where players race through traversal courses and compete for the fastest leaderboard times."
+              />
+
+              <Content
+                type="button"
+                value="Repository (Request)"
+                url="https://github.com/k2424230/ChallengersPlayground_Code"
+              />
+            </RHS>
+          }
+        />
+        <img className="section-divider" src={divider} alt="" />
         {/* Bloom or Doom*/}
         <Section
           id="projects"
@@ -123,7 +172,7 @@ export default function Home() {
             <LHS>
               <iframe
                 className="project-video"
-                src="https://www.youtube.com/embed/WInRiD5h7xs?si=7v98qmN80NM6aA9Q"
+                src="https://www.youtube.com/embed/5L0wuR1jBvY?si=ojt0s6WZrGWGVlsd"
                 title="Bloom or Doom Gameplay"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -135,8 +184,25 @@ export default function Home() {
             <RHS>
               <Content
                 type="text"
-                value="Bloom or Doom is an engaging puzzle platformer that blends dynamic day/night mechanics with strategic object manipulation."
+                value="Bloom or Doom is a Unity Android Multiplayer Co-op game created in just 72 hours during the Tencent Game Jam at Kingston University."
               />
+
+              <Content
+                type="text"
+                value="The game was praised for amazing finish and innovative NFC technology integration into gameplay mechanics."
+              />
+
+
+              <Content
+                type="text"
+                value="Following the game jam, our team continued development by implementing player feedback, improving the UI/UX, balancing gameplay, enhancing accessibility, and adding overall polish."
+              />
+
+              <Content
+                type="text"
+                value="The project was later selected to be showcased at Develop:Brighton 2026, allowing us to present the game to industry professionals and demonstrate how iterative development can transform a game jam prototype into a polished experience."
+              />
+
               <Content
                 type="button"
                 value="View Repo"
